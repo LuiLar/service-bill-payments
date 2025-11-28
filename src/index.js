@@ -2,6 +2,7 @@ import express from "express";
 import cors from "cors";
 import { connectToDatabase } from "./config/database.js";
 import healthRoutes from "./routes/health.route.js";
+import billRoutes from "./routes/bills.route.js";
 
 const app = express();
 
@@ -12,6 +13,7 @@ app.use(cors({ origin: true }));
 
 //Routes
 app.use(healthRoutes);
+app.use(billRoutes);
 
 const init = async () => {
   await connectToDatabase();
