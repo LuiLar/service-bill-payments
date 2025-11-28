@@ -1,12 +1,24 @@
 import express from "express";
+import cors from "cors";
+import { connectToDatabase } from "./config/database.js";
+import healthRoutes from "./routes/health.route.js";
 
 const app = express();
-const PORT = process.env.PORT || 3000;
 
-app.get("/", (req, res) => {
-  res.send("Hello World!");
-});
+//Middlewares
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(cors({ origin: true }));
 
-app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
-});
+//Routes
+app.use(healthRoutes);
+
+const init = async () => {
+  await connectToDatabase();
+
+  app.listen(process.env.PORT, () => {
+    console.log(`Server is running on http://localhost:${process.env.PORT}`);
+  });
+};
+
+init();
