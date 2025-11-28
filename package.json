@@ -1,0 +1,23 @@
+{
+  "name": "service-bill-payments",
+  "version": "0.0.1",
+  "description": "API for managing bill payments for clients.",
+  "homepage": "https://github.com/LuiLar/service-bill-payments#readme",
+  "bugs": {
+    "url": "https://github.com/LuiLar/service-bill-payments/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuiLar/service-bill-payments.git"
+  },
+  "license": "ISC",
+  "author": "Luis Larghi",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --watch-path=./src --env-file=.env src/index.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
