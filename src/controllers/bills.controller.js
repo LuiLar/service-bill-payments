@@ -11,11 +11,11 @@ export const createBill = async (req, res) => {
 };
 
 export const payBill = async (req, res) => {
-  const { id, billingPeriod } = req.body;
+  const { clientId, billingPeriod } = req.body;
 
   try {
     const bill = await Bill.findOne({
-      clientId: id,
+      clientId: clientId,
       billingPeriod: billingPeriod,
     });
 
