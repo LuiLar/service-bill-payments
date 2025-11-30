@@ -1,0 +1,170 @@
+[{
+  "_id": {
+    "$oid": "6929d1c75e16211943f3d3b9"
+  },
+  "clientId": 100,
+  "serviceType": "Water",
+  "billingPeriod": "202501",
+  "amount": 32.5,
+  "status": "Paid",
+  "createdAt": {
+    "$date": "2025-11-28T16:45:59.521Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-30T21:28:38.119Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "692bc0eee1b1d6d13d2584b3"
+  },
+  "clientId": 200,
+  "serviceType": "Electricity",
+  "billingPeriod": "202501",
+  "amount": 10,
+  "status": "Pending",
+  "createdAt": {
+    "$date": "2025-11-30T03:58:38.617Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-30T03:58:38.617Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "692c74dc37ce592526c3013f"
+  },
+  "clientId": 300,
+  "serviceType": "Internet",
+  "billingPeriod": "202505",
+  "amount": 30.07,
+  "status": "Pending",
+  "createdAt": {
+    "$date": "2025-11-30T16:46:20.522Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-30T16:46:20.522Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "692c74f837ce592526c30141"
+  },
+  "clientId": 300,
+  "serviceType": "Sewer",
+  "billingPeriod": "202504",
+  "amount": 34.4,
+  "status": "Pending",
+  "createdAt": {
+    "$date": "2025-11-30T16:46:48.575Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-30T16:46:48.575Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "692c751737ce592526c30143"
+  },
+  "clientId": 400,
+  "serviceType": "Water",
+  "billingPeriod": "202512",
+  "amount": 63.4,
+  "status": "Pending",
+  "createdAt": {
+    "$date": "2025-11-30T16:47:19.512Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-30T16:47:19.512Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "692c755c37ce592526c30149"
+  },
+  "clientId": 200,
+  "serviceType": "Rent",
+  "billingPeriod": "202506",
+  "amount": 434.53,
+  "status": "Pending",
+  "createdAt": {
+    "$date": "2025-11-30T16:48:28.047Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-30T16:48:28.047Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "692c75d237ce592526c3014b"
+  },
+  "clientId": 400,
+  "serviceType": "Phone",
+  "billingPeriod": "202511",
+  "amount": 53.4,
+  "status": "Pending",
+  "createdAt": {
+    "$date": "2025-11-30T16:50:26.035Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-30T16:50:26.035Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "692c75e537ce592526c3014d"
+  },
+  "clientId": 500,
+  "serviceType": "Natural Gas",
+  "billingPeriod": "202510",
+  "amount": 5.32,
+  "status": "Pending",
+  "createdAt": {
+    "$date": "2025-11-30T16:50:45.035Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-30T16:50:45.035Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "692c75f337ce592526c3014f"
+  },
+  "clientId": 500,
+  "serviceType": "Electricity",
+  "billingPeriod": "202508",
+  "amount": 33.5,
+  "status": "Pending",
+  "createdAt": {
+    "$date": "2025-11-30T16:50:59.856Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-30T16:50:59.856Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "692c9aaacfb0e44e857591aa"
+  },
+  "clientId": 100,
+  "serviceType": "Electricity",
+  "billingPeriod": "202506",
+  "amount": 34,
+  "status": "Pending",
+  "createdAt": {
+    "$date": "2025-11-30T19:27:38.012Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-30T21:06:27.787Z"
+  },
+  "__v": 0
+}]
