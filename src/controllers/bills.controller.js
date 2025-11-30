@@ -23,7 +23,7 @@ export const payBill = async (req, res) => {
       return res.status(404).json({ error: "Bill not found" });
     }
 
-    bill.status = "paid";
+    bill.status = "Paid";
     await bill.save();
 
     res.status(200).json(bill);

@@ -20,8 +20,8 @@ const billSchema = new Schema(
     amount: { type: Schema.Types.Double, required: true },
     status: {
       type: Schema.Types.String,
-      enum: ["pending", "paid"],
-      default: "pending",
+      enum: ["Pending", "Paid"],
+      default: "Pending",
     },
   },
   { timestamps: true }
