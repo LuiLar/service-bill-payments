@@ -36,7 +36,7 @@ export const getPendingBillsByClientID = async (req, res) => {
   const { id } = req.params;
 
   try {
-    const bills = await Bill.find({ clientId: id, status: "pending" });
+    const bills = await Bill.find({ clientId: id, status: "Pending" });
 
     res.status(200).json(bills);
   } catch (error) {
@@ -48,7 +48,7 @@ export const getPaidBillsByClientID = async (req, res) => {
   const { id } = req.params;
 
   try {
-    const bills = await Bill.find({ clientId: id, status: "paid" });
+    const bills = await Bill.find({ clientId: id, status: "Paid" });
 
     res.status(200).json(bills);
   } catch (error) {
