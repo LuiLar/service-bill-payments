@@ -6,9 +6,9 @@ export const createBill = async (req, res) => {
 
     await bill.save();
 
-    return res.status(201).json(bill);
+    res.status(201).json(bill);
   } catch (error) {
-    return res.status(500).json({ error: error.message });
+    res.status(500).json({ error: error.message });
   }
 };
 
@@ -45,9 +45,9 @@ export const getPendingBillsByClientID = async (req, res) => {
   try {
     const bills = await Bill.find({ clientId: id, status: "Pending" });
 
-    return res.status(200).json(bills);
+    res.status(200).json(bills);
   } catch (error) {
-    return res.status(500).json({ error: error.message });
+    res.status(500).json({ error: error.message });
   }
 };
 
@@ -57,8 +57,8 @@ export const getPaidBillsByClientID = async (req, res) => {
   try {
     const bills = await Bill.find({ clientId: id, status: "Paid" });
 
-    return res.status(200).json(bills);
+    res.status(200).json(bills);
   } catch (error) {
-    return res.status(500).json({ error: error.message });
+    res.status(500).json({ error: error.message });
   }
 };

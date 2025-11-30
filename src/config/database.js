@@ -1,7 +1,6 @@
 import { connect } from "mongoose";
 
-const mongoURI =
-  process.env.MONGO_URI || "mongodb://localhost:27017/bill_payments";
+const mongoURI = process.env.MONGO_URI;
 
 export const connectToDatabase = async () => {
   try {
