@@ -17,7 +17,7 @@ const billSchema = new Schema(
       required: true,
     },
     billingPeriod: { type: Schema.Types.String, required: true },
-    amount: { type: Schema.Types.Decimal128, required: true },
+    amount: { type: Schema.Types.Double, required: true },
     status: {
       type: Schema.Types.String,
       enum: ["pending", "paid"],
